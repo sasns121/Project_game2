@@ -10,7 +10,6 @@ public class CoinCollect : MonoBehaviour
         {
             PlayerCount.coins++;
             Destroy(gameObject);
-
         }
     }
 }

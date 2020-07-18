@@ -8,6 +8,10 @@ public class ActivateFlag : MonoBehaviour
     public Animator Flag;
     public Animator Char;
 
+    private void Start()
+    {
+        Char = GameObject.FindGameObjectWithTag("Body").GetComponent<Animator>();
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
